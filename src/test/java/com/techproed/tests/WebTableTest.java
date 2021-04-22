@@ -1,6 +1,7 @@
 package com.techproed.tests;
 
 import com.techproed.utilities.TestBase;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -47,6 +48,7 @@ public class WebTableTest extends TestBase {
         //tbody/tr[2]/td[5] : 2. satır 5. sütun gibi istediğimiz hücreyi yazdırma.
         WebElement hucre = driver.findElement(By.xpath("//tbody/tr[2]/td[5]"));
         System.out.println(hucre.getText());
+
     }
     // her test methodundan sonra çalışır.
     @AfterMethod
